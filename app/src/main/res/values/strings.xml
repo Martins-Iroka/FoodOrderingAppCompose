@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">FoodOrderingAppCompose</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <string name="info">All our foods are double checked before leaving our stores so by any case you found a broken food please contact our hotline immediately.</string>
+</resources>
