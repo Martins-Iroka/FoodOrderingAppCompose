@@ -22,8 +22,6 @@ import com.martdev.foodorderingappcompose.viewmodel.FoodOrderingVM
 
 class MainActivity : ComponentActivity() {
 
-    private val viewModel by viewModels<FoodOrderingVM>()
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
@@ -38,6 +36,9 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun FoodOrderingApp() {
+    /**
+     * This viewModel is tied to the lifecycle of the activity class which host the composable
+     */
     val viewModel = viewModel<FoodOrderingVM>()
     val navController = rememberNavController()
 
